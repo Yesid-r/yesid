@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Code, FileText, Github, Linkedin, Mail, MapPin } from 'lucide-react'
 import avatar from '../assets/img/avatar.png'
-import { contact, description } from '@/assets/constants/contact'
+import { contact, description, skills } from '@/assets/constants/utils'
 import { experiences } from '@/assets/constants/experience'
 import { projects } from '@/assets/constants/projects'
 
@@ -69,19 +69,13 @@ export default function Portfolio() {
             {/* Skills */}
             <Card>
               <CardHeader>
-                <CardTitle>Habilidades</CardTitle>
+                <CardTitle>Skills</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <Badge>JavaScript</Badge>
-                  <Badge>React</Badge>
-                  <Badge>Node.js</Badge>
-                  <Badge>TypeScript</Badge>
-                  <Badge>Java</Badge>
-                  <Badge>Python</Badge>
-                  <Badge>AWS</Badge>
-                  <Badge>Docker</Badge>
-                  <Badge>Git</Badge>
+                  {skills.map((skill, index) => (
+                    <Badge key={index}>{skill}</Badge>
+                  ))}
                 </div>
               </CardContent>
             </Card>
@@ -89,7 +83,7 @@ export default function Portfolio() {
             {/* Contact */}
             <Card>
               <CardHeader>
-                <CardTitle>Contacto</CardTitle>
+                <CardTitle>Contact</CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
                 <div className="flex items-center">
@@ -117,7 +111,7 @@ export default function Portfolio() {
             {/* Experience */}
             <Card>
               <CardHeader>
-                <CardTitle>Experiencia</CardTitle>
+                <CardTitle>Experience</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 {experiences.map((experience, index) => (
@@ -137,9 +131,9 @@ export default function Portfolio() {
             </Card>
 
             {/* Projects */}
-            <Card>
+            <Card >
               <CardHeader>
-                <CardTitle>Proyectos</CardTitle>
+                <CardTitle>Projects</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 {projects.map((project, index) => (
@@ -168,7 +162,7 @@ export default function Portfolio() {
                         rel="noopener noreferrer"
                         className="mt-4 inline-block text-sm text-blue-600 hover:text-blue-800 transition-colors"
                       >
-                        Ver código en GitHub
+                        See on GitHub
                       </a>
                     </div>
                   </div>

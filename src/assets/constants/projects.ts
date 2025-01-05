@@ -8,31 +8,23 @@ interface Project {
   import ecommerce from '../img/projects/ecommerce.png'
   export const projects: Project[] = [
     {
-      title: "Sistema de Gestión de Tareas",
+      title: "Task Management System",
       description: `
-        Desarrollé una aplicación web de gestión de tareas utilizando React, Node.js y MongoDB. 
-        Implementé autenticación JWT para garantizar la seguridad de los usuarios.
+        I developed a web application for task management using React, Node.js, and MongoDB. 
+        I implemented JWT authentication to ensure user security.
       `,
       image: task.src, 
       githubLink: "https://github.com/Yesid-r/TaskProject"
     },
     {
-      title: "E-commerce Fullstack",
+      title: "Fullstack E-commerce",
       description: `
-        Creé una plataforma de comercio electrónico utilizando React, Express y PostgreSQL. 
-        Implementé un sistema de pago seguro con integración de pasarelas de pago.
+        I created an e-commerce platform using React, Express, and PostgreSQL. 
+        I implemented a secure payment system with payment gateway integration.
       `,
       image: ecommerce.src, 
       githubLink: "https://github.com/Yesid-r/backend_ecommerce_nodejs_prisma", 
-    },
-    {
-      title: "Dashboard Analítico",
-      description: `
-        Diseñé e implementé un dashboard interactivo para visualización de datos utilizando React y D3.js. 
-        Incorporé filtros dinámicos y gráficos personalizados.
-      `,
-      image: "/images/analytics-dashboard.png",
-      githubLink: "https://github.com/tuusuario/repo-dashboard",
-    },
+    }
   ];
+  
   
