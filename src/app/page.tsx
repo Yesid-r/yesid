@@ -2,11 +2,10 @@ import Image from 'next/image'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Briefcase, Code, FileText, Github, Linkedin, Mail, MapPin } from 'lucide-react'
+import { Code, FileText, Github, Linkedin, Mail, MapPin } from 'lucide-react'
 import avatar from '../assets/img/avatar.png'
 import { contact, description } from '@/assets/constants/contact'
 import { experiences } from '@/assets/constants/experience'
-import task from '../assets/img/projects/task.png'
 import { projects } from '@/assets/constants/projects'
 
 
