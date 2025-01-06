@@ -6,6 +6,7 @@ interface Project {
   }
   import task from '../img/projects/task.png'
   import ecommerce from '../img/projects/ecommerce.png'
+  import courseManagement from '../img/projects/Courses_management.png'
   export const projects: Project[] = [
     {
       title: "Task Management System",
@@ -24,6 +25,13 @@ interface Project {
       `,
       image: ecommerce.src, 
       githubLink: "https://github.com/Yesid-r/backend_ecommerce_nodejs_prisma", 
+    },{
+      title: "Courses Management System",
+      description: `
+        I developed desktop software for course management using Java, awt y swing.
+      `,
+      image: courseManagement.src,
+      githubLink: "https://github.com/Yesid-r/tallerFinal"
     }
   ];
   
