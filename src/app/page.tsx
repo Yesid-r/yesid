@@ -66,7 +66,7 @@ export default function Portfolio() {
             {/* About */}
             <Card>
               <CardHeader>
-                <CardTitle>Acerca de</CardTitle>
+                <CardTitle>About me</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600">
