@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Code, FileText, Github, Linkedin, Mail, MapPin } from 'lucide-react'
 import avatar from '../assets/img/avatar.png'
-import { contact, description, skills } from '@/assets/constants/utils'
+import { contact, description, skills, url_cv } from '@/assets/constants/utils'
 import { experiences } from '@/assets/constants/experience'
 import { projects } from '@/assets/constants/projects'
 
@@ -39,7 +39,16 @@ export default function Portfolio() {
               <p className="text-gray-500">Software Engineer</p>
             </div>
             <div className="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
-              <Button><FileText className="mr-2 h-4 w-4" /> Descargar CV</Button>
+              <a 
+              href={url_cv}
+              target='_blank'
+              rel='noopener noreferrer'
+              
+              >
+                <Button>
+                <FileText className="mr-2 h-4 w-4" /> Download CV
+                </Button>
+                </a>
             </div>
           </div>
         </div>

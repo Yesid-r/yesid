@@ -19,3 +19,5 @@ export const skills = [
   "MongoDB",
   "Git",
 ];
+
+export const url_cv = 'https://drive.google.com/file/d/1r50rjwduGfbxylpAtr2JUeMev4aroSWj/view'
