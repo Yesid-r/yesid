@@ -7,9 +7,11 @@ import avatar from '../assets/img/avatar.png'
 import { contact, description, skills, url_cv } from '@/assets/constants/utils'
 import { experiences } from '@/assets/constants/experience'
 import { projects } from '@/assets/constants/projects'
+import { formatUrl } from '@/lib/utils'
 
 
 export default function Portfolio() {
+
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Banner */}
@@ -39,16 +41,16 @@ export default function Portfolio() {
               <p className="text-gray-500">Software Engineer</p>
             </div>
             <div className="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
-              <a 
-              href={url_cv}
-              target='_blank'
-              rel='noopener noreferrer'
-              
+              <a
+                href={url_cv}
+                target='_blank'
+                rel='noopener noreferrer'
+
               >
                 <Button>
-                <FileText className="mr-2 h-4 w-4" /> Download CV
+                  <FileText className="mr-2 h-4 w-4" /> Download CV
                 </Button>
-                </a>
+              </a>
             </div>
           </div>
         </div>
@@ -104,12 +106,26 @@ export default function Portfolio() {
                   <span className="text-sm">{contact.email}</span>
                 </div>
                 <div className="flex items-center">
-                  <Linkedin className="mr-2 h-4 w-4 text-gray-500" />
-                  <span className="text-sm">{contact.linkedin}</span>
+                  <a
+                    href={formatUrl(contact.linkedin)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center hover:underline"
+                  >
+                    <Linkedin className="mr-2 h-4 w-4 text-gray-500" />
+                    <span className="text-sm">{contact.linkedin}</span>
+                  </a>
                 </div>
-                <div className="flex items-center">
-                  <Github className="mr-2 h-4 w-4 text-gray-500" />
-                  <span className="text-sm">{contact.github}</span>
+                <div className="flex items-center mt-2">
+                  <a
+                    href={formatUrl(contact.github)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center hover:underline"
+                  >
+                    <Github className="mr-2 h-4 w-4 text-gray-500" />
+                    <span className="text-sm">{contact.github}</span>
+                  </a>
                 </div>
               </CardContent>
             </Card>
