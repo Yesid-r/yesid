@@ -6,6 +6,6 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 
-export const formatUrl = (url) => {
+export const formatUrl = (url: string): string => {
   return url.startsWith('http') ? url : `https://${url}`;
 };
