@@ -7,7 +7,17 @@ interface Project {
   import task from '../img/projects/task.png'
   import ecommerce from '../img/projects/ecommerce.png'
   import courseManagement from '../img/projects/Courses_management.png'
+  import ecommercemicroservices from '../img/projects/diagramaproyecto.png'
   export const projects: Project[] = [
+    {
+      title:"Fullstack E-commerce microservices",
+      description: `
+       I developed a microservices-based e-commerce platform using Spring WebFlux, Clean Architecture, and reactive programming. 
+       I implemented independent services for managing products, customers, orders, and notifications, integrated asynchronously via Kafka and containerized with Docker for consistent deployments.
+      `,
+      image: ecommercemicroservices.src,
+      githubLink: "https://github.com/Yesid-r/ecommerce-hex"
+    },
     {
       title: "Task Management System",
       description: `

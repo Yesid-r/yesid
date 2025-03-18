@@ -8,7 +8,7 @@ interface Experience {
   
   export const experiences: Experience[] = [
     {
-      date: "July 2024 - Present",
+      date: "July 2024 - January 2025",
       role: "Software Architect",
       company: "Ceiba Software House",
       description: `
